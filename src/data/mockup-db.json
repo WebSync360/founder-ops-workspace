@@ -1,0 +1,15 @@
+{
+  "stats": {
+    "totalRevenue": 45231.89,
+    "revenueChange": 20.1,
+    "activeUsers": 2400,
+    "userChange": 10.5,
+    "activeTasks": 12,
+    "systemHealth": 98.2
+  },
+  "recentActivity": [
+    { "id": "1", "user": "Alex", "action": "Updated Product #42", "time": "2 mins ago" },
+    { "id": "2", "user": "Sarah", "action": "Resolved Ticket #102", "time": "15 mins ago" },
+    { "id": "3", "user": "Mike", "action": "Deleted User 'John_Doe'", "time": "1 hour ago" }
+  ]
+}
