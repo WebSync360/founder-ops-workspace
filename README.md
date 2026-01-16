@@ -19,7 +19,7 @@ This leads to:
 - Context switching
 - Missed priorities
 - Slower execution
-- Founder fatigue...
+- Founder fatigue....
 
 ---
 
