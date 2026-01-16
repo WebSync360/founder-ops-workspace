@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { 
   LayoutDashboard, Users, ShieldCheck, Settings, 
-  Activity, LogOut, X, Zap, ChevronRight 
+  Activity, X, Zap, ChevronRight 
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -49,7 +49,7 @@ export function Sidebar({ onNavClick }: { onNavClick?: () => void }) {
           </div>
           <div className="flex flex-col">
             <span className="text-sm font-bold tracking-tight text-white uppercase">Founder<span className="text-indigo-500">Ops</span></span>
-            <span className="text-[10px] font-medium text-zinc-500">v1.0.4 — PRO</span>
+            <span className="text-[10px] font-medium text-zinc-500">v1.0.4 - PRO</span>
           </div>
         </div>
         <button onClick={onNavClick} className="lg:hidden text-zinc-500 hover:text-white transition-colors">
@@ -75,14 +75,14 @@ export function Sidebar({ onNavClick }: { onNavClick?: () => void }) {
                     className={cn(
                       "group relative flex items-center gap-3 rounded-lg px-4 py-2.5 text-sm font-medium transition-all duration-200",
                       isActive
-                        ? "text-white bg-white/[0.03] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]"
-                        : "text-zinc-500 hover:text-zinc-200 hover:bg-white/[0.02]"
+                        ? "text-white `bg-white/3` shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]"
+                        : "text-zinc-500 hover:text-zinc-200 hover:bg-white/2"
                     )}
                   >
                     {isActive && (
                       <motion.div 
                         layoutId="active-pill"
-                        className="absolute left-0 w-[2px] h-5 bg-indigo-500 rounded-r-full"
+                        className="absolute left-0 `w-0.5` h-5 bg-indigo-500 rounded-r-full"
                       />
                     )}
                     <item.icon className={cn(
@@ -101,8 +101,8 @@ export function Sidebar({ onNavClick }: { onNavClick?: () => void }) {
 
       {/* 3. Footer Section - User Profile */}
       <div className="mt-auto p-4 border-t border-white/5 bg-zinc-950/50">
-        <div className="flex items-center gap-3 p-2 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/[0.02] transition-all cursor-pointer group">
-          <div className="h-9 w-9 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xs">
+        <div className="flex items-center gap-3 p-2 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/2 transition-all cursor-pointer group">
+          <div className="h-9 w-9 rounded-lg bg-linear-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xs">
             DB
           </div>
           <div className="flex flex-col flex-1 min-w-0">

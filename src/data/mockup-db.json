@@ -10,6 +10,31 @@
   "recentActivity": [
     { "id": "1", "user": "Alex", "action": "Updated Product #42", "time": "2 mins ago" },
     { "id": "2", "user": "Sarah", "action": "Resolved Ticket #102", "time": "15 mins ago" },
-    { "id": "3", "user": "Mike", "action": "Deleted User 'John_Doe'", "time": "1 hour ago" }
-  ]
+    { "id": "3", "user": "Mike", "action": "Deleted User 'Hary_Jay'", "time": "1 hour ago" },
+    { "id": "4", "user": "Linda", "action": "Created Task 'Design Mockups'", "time": "3 hours ago" }
+  ],
+  "products": [
+  { "id": "PRD-001", "name": "Neural Link Pro", "category": "Hardware", "price": 1299.00, "stock": 42, "status": "In Stock" },
+  { "id": "PRD-002", "name": "Quantum Ops Suite", "category": "Software", "price": 499.00, "stock": 8, "status": "Low Stock" },
+  { "id": "PRD-003", "name": "Cyber Sentinel", "category": "Security", "price": 150.00, "stock": 0, "status": "Out of Stock" },
+  { "id": "PRD-004", "name": "Cloud Flow v4", "category": "SaaS", "price": 89.00, "stock": 156, "status": "In Stock" }
+],
+"projects": [
+  { "id": "PJ-1", "name": "Apollo Launch", "progress": 75, "color": "bg-blue-500" },
+  { "id": "PJ-2", "name": "Titan Infrastructure", "progress": 40, "color": "bg-purple-500" }
+],
+"tasks": [
+  { "id": "TSK-01", "title": "Review API Gateway logs", "project": "Apollo Launch", "priority": "High", "status": "Todo" },
+  { "id": "TSK-02", "title": "Update SSL Certificates", "project": "System", "priority": "Urgent", "status": "In Progress" },
+  { "id": "TSK-03", "title": "Onboard new Founding Eng", "project": "HR", "priority": "Medium", "status": "Todo" }
+],
+"revenueTrend": [
+  { "name": "Jan", "total": 2400 },
+  { "name": "Feb", "total": 1398 },
+  { "name": "Mar", "total": 9800 },
+  { "name": "Apr", "total": 3908 },
+  { "name": "May", "total": 4800 },
+  { "name": "Jun", "total": 3800 },
+  { "name": "Jul", "total": 4300 }
+]
 }

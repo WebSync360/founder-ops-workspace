@@ -1,14 +1,16 @@
+"use client"
+
 import { useState, useEffect } from 'react';
-import db from '@/data/mock-db.json';
+// Using a relative path is a safe bet for JSON in some TS environments
+import dashboardData from '../data/mockup-db.json';
 
 export function useDashboardData() {
-  const [data, setData] = useState(db);
+  const [data, setData] = useState(dashboardData);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate network delay for a premium "skeleton" loading feel
     const timer = setTimeout(() => {
-      setData(db);
+      setData(dashboardData);
       setIsLoading(false);
     }, 800);
     return () => clearTimeout(timer);

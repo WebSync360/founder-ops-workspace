@@ -3,8 +3,11 @@
 import { useDashboardData } from "@/hooks/use-dashboard-data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Users, Zap, CheckCircle2 } from "lucide-react";
+import { OverviewChart } from "@/components/dashboard/overview-chart";
 
+// ... rest of the file stays the same
 export default function OverviewPage() {
   const { data, isLoading } = useDashboardData();
 
@@ -42,11 +45,14 @@ export default function OverviewPage() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-        <Card className="col-span-4 bg-zinc-900/50 border-white/5">
-          <CardHeader><CardTitle className="text-white">Performance Metrics</CardTitle></CardHeader>
-          <CardContent className="h-[300px] flex items-center justify-center text-zinc-600">
-             {/* We will insert the Recharts Chart here next */}
-             Chart Visualization Coming Up...
+        <Card className="col-span-4 bg-zinc-900/50 border-white/5 shadow-xl">
+          <CardHeader>
+            <CardTitle className="text-white flex items-center gap-2">
+              Revenue Growth <Badge className="bg-emerald-500/10 text-emerald-500 border-none">+12.5%</Badge>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="h-64 px-2"> {/* Adjusted height for better visibility */}
+            <OverviewChart />
           </CardContent>
         </Card>
 
